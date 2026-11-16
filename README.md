@@ -14,7 +14,7 @@
 - `raw/`：尚未處理的資料；不會提交至 GitHub。
 - `source-archive/`：已成功處理的原始檔本機備份；不會提交至 GitHub。
 - `vault/`：Obsidian 相容的 Markdown 知識庫。
-- `website/`：不依賴框架的靜態 GitHub Pages 網站。
+- `website/`：不依賴框架的靜態 GitHub Pages 網站。公開首頁會從 GitHub API 自動讀取 Vault 資料夾，Obsidian 與 GitHub Markdown 則閱讀同一批筆記。
 - `scripts/`：協助檢查待處理來源的工具。
 
 詳細規則請見 [`AGENTS.md`](AGENTS.md)。

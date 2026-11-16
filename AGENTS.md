@@ -32,8 +32,8 @@
 3. 檢查標題、作者、年份、版本、章節與核心概念，判定為：`duplicate`、`revision`、`supplement` 或 `new`。
 4. `duplicate` 不建立新的筆記、不搬移檔案；在處理報告記錄比對結果。
 5. `revision`、`supplement`、`new` 建立或更新來源筆記、概念筆記及主題索引；不可覆寫原有來源的追溯資訊。
-6. 只有在所有筆記、來源登錄與網站內容都成功更新後，才可將檔案從 `raw/` 移至 `source-archive/`。
-7. 執行驗證後，自動將本次整理產生的可提交檔案 `git add`、建立清楚的 commit，並 `git push origin main`。原始檔所在的 `raw/` 與 `source-archive/` 必須保持忽略，絕不可加入 commit。
+6. 只有在所有筆記與來源登錄都成功更新後，才可將檔案從 `raw/` 移至 `source-archive/`。不需手動修改 `website/` 中的任何檔案。
+7. 執行驗證後，自動將本次整理產生的可提交檔案 `git add`、建立清楚的 commit，並 `git push origin main`。
 8. 推送成功後，由 GitHub Pages 自動部署 `website/`；回報處理摘要、commit ID、推送結果與網站網址。
 
 不得在使用者只說「同步 raw」時擅自刪除任何檔案。自動 Git 推送只屬於成功的「同步 raw」流程；在一般討論、草稿修改、分類待確認或驗證失敗時，禁止自動 commit 或 push。
@@ -109,8 +109,7 @@ sources: ["[[Source title]]"]
 - 英文術語優先；中文是精確的理解輔助，不是逐字翻譯。
 - 對外公開內容避免貼出講義全文、長段引用或私密資訊。
 - 網站風格維持簡潔、淺色、資訊優先；不要加入登入、資料庫或不必要動畫。
-- 變更筆記後，同步更新相對應網站頁面、首頁統計與來源／概念連結。
-- `website/index.html` 是導覽頁：概念卡片、來源清單與主題入口必須連到 GitHub Repository 中對應的 Markdown 檔案或資料夾，讓 GitHub 負責顯示完整筆記。
+- `website/index.html` 是導覽首頁。頁面透過 `website/assets/app.js` 在瀏覽器端呼叫 GitHub Contents API，自動讀取 `vault/concepts/`、`vault/sources/`、`vault/topics/` 的 Markdown 並產生概念卡片、來源清單與主題索引。AI 不需為新增內容修改 HTML 或 JavaScript；只要 Markdown 放在正確資料夾、檔名符合規則並完成 Git push，網站重新整理後即自動顯示。
 - 提交前檢查內部連結、Git 忽略規則與網站在靜態伺服器下是否可瀏覽。
 
 ## 8. 完成條件
