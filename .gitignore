@@ -3,4 +3,5 @@ raw/
 source-archive/
 vault/.obsidian/workspace*.json
 website/.cache/
+website/vault
 

@@ -21,6 +21,10 @@ jobs:
       - uses: actions/configure-pages@v5
         with:
           enablement: true
+      - name: Copy vault to website
+        run: |
+          mkdir -p website/vault
+          cp -r vault/* website/vault/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: website

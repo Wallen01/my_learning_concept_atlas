@@ -1,26 +1,69 @@
-// Learning Concept Atlas — Dynamic GitHub loader
-// Reads vault/concepts/, vault/sources/, vault/topics/ via GitHub Contents API
-// and populates the homepage without any hardcoded content.
+// Learning Concept Atlas — Dynamic loader
+// Reads vault/concepts/, vault/sources/, vault/topics/
+// Combines direct relative static fetch (fast, zero quota) with GitHub API directory listing
 
 const OWNER = 'Wallen01';
 const REPO  = 'my_learning_concept_atlas';
 const API   = `https://api.github.com/repos/${OWNER}/${REPO}/contents`;
 const BLOB  = `https://github.com/${OWNER}/${REPO}/blob/main`;
 
+// Built-in fallbacks if GitHub API rate limit (403) is reached
+const FALLBACKS = {
+  'vault/topics': ['machine-learning.md'],
+  'vault/concepts': [
+    'attention.md',
+    'backpropagation.md',
+    'convolutional-neural-network.md',
+    'neural-network.md',
+    'recurrent-neural-network.md',
+    'transformer.md'
+  ],
+  'vault/sources': [
+    'attention-and-transformers.md',
+    'image-classification-with-cnns.md',
+    'neural-networks-and-backpropagation.md',
+    'recurrent-neural-networks.md'
+  ]
+};
+
 // ── helpers ──────────────────────────────────────────────────────────
 
 async function fetchDir(path) {
-  const res = await fetch(`${API}/${path}`);
-  if (!res.ok) throw new Error(`GitHub API ${res.status}`);
-  const items = await res.json();
-  return items.filter(f => f.name.endsWith('.md'));
+  try {
+    const res = await fetch(`${API}/${path}`);
+    if (res.ok) {
+      const items = await res.json();
+      const files = items.filter(f => f.name.endsWith('.md')).map(f => ({ name: f.name, path: f.path }));
+      try { localStorage.setItem('cached_' + path, JSON.stringify(files)); } catch (e) {}
+      return files;
+    }
+  } catch (e) {
+    // network or api error, proceed to fallback
+  }
+
+  // 1. Try localStorage cache
+  try {
+    const cached = localStorage.getItem('cached_' + path);
+    if (cached) return JSON.parse(cached);
+  } catch (e) {}
+
+  // 2. Use default fallback list
+  const defaults = FALLBACKS[path] || [];
+  return defaults.map(name => ({ name, path: `${path}/${name}` }));
 }
 
 async function fetchRaw(path) {
+  // First attempt: direct relative fetch from the deployed site (fast & no rate limits)
+  try {
+    const localRes = await fetch(path);
+    if (localRes.ok) return await localRes.text();
+  } catch (e) {}
+
+  // Second attempt: GitHub Raw API
   const res = await fetch(`${API}/${path}`, {
     headers: { Accept: 'application/vnd.github.raw+json' }
   });
-  if (!res.ok) throw new Error(`GitHub API ${res.status}`);
+  if (!res.ok) throw new Error(`Fetch error: ${res.status}`);
   return res.text();
 }
 
@@ -62,10 +105,6 @@ function parseSourceKind(fm) {
   return map[raw] || raw || 'source';
 }
 
-function kebabToLabel(name) {
-  return name.replace(/\.md$/, '').replace(/-/g, ' ');
-}
-
 function setError(el, msg) {
   el.classList.remove('status-loading');
   el.classList.add('status-error');
@@ -90,7 +129,6 @@ async function loadTopics() {
     const topics = await Promise.all(files.map(async f => {
       const md = await fetchRaw(f.path);
       const { en, zh } = parseTitleLine(md);
-      // get description: first non-heading, non-frontmatter paragraph
       const desc = md.replace(/^---[\s\S]*?---\s*/, '').replace(/^#.+\n*/, '').trim().split('\n')[0] || '';
       return { en, zh, desc, path: f.path };
     }));
@@ -126,7 +164,8 @@ async function loadConcepts() {
     container.innerHTML = '';
     for (const c of concepts) {
       const article = document.createElement('article');
-      article.innerHTML = `<h3><a href="${BLOB}/${c.path}">${c.en}</a> <span>${c.zh}</span></h3><p>${c.quick}</p>`;
+      // Relative path to the concept markdown file
+      article.innerHTML = `<h3><a href="${c.path}">${c.en}</a> <span>${c.zh}</span></h3><p>${c.quick}</p>`;
       container.appendChild(article);
     }
   } catch (e) {
