@@ -19,7 +19,8 @@
 | `vault/sources/` | 每個講義、文章或論文的一份來源筆記 | 提交 |
 | `vault/topics/` | 受控主題的定義與索引 | 提交 |
 | `vault/_system/` | 來源登錄表、待確認事項與處理紀錄 | 提交 |
-| `website/` | 公開網站的 HTML、CSS、JS | 提交 |
+| `website/` | 公開網站的 HTML、CSS、JS 與靜態索引 manifest.json | 提交 |
+| `scripts/` | 維護工具與自動化腳本（如產生 manifest 索引） | 提交 |
 
 不得將原始講義、受版權保護的 PDF、下載論文或個人資料提交到 Git。
 
@@ -109,7 +110,7 @@ sources: ["[[Source title]]"]
 - 英文術語優先；中文是精確的理解輔助，不是逐字翻譯。
 - 對外公開內容避免貼出講義全文、長段引用或私密資訊。
 - 網站風格維持簡潔、淺色、資訊優先；不要加入登入、資料庫或不必要動畫。
-- `website/index.html` 是導覽首頁。頁面透過 `website/assets/app.js` 在瀏覽器端呼叫 GitHub Contents API，自動讀取 `vault/concepts/`、`vault/sources/`、`vault/topics/` 的 Markdown 並產生概念卡片、來源清單與主題索引。AI 不需為新增內容修改 HTML 或 JavaScript；只要 Markdown 放在正確資料夾、檔名符合規則並完成 Git push，網站重新整理後即自動顯示。
+- `website/index.html` 是導覽首頁。頁面透過 `website/assets/app.js` 優先讀取由 `scripts/generate_manifest.py` 產生的 `website/manifest.json` 靜態索引（並以 GitHub API 作為備援），自動顯示概念卡片、來源清單與主題索引。AI 不需為新增內容修改 HTML 或 CSS；只要依規則產生靜態索引並完成 Git push，網站重新整理後即自動顯示。
 - 提交前檢查內部連結、Git 忽略規則與網站在靜態伺服器下是否可瀏覽。
 
 ## 8. 完成條件
