@@ -1,0 +1,281 @@
+{
+  "topics": [
+    {
+      "name": "machine-learning.md",
+      "path": "vault/topics/machine-learning.md",
+      "en": "Machine Learning",
+      "zh": "機器學習",
+      "desc": "讓系統從資料中學習模式並進行預測或決策的相關知識。"
+    }
+  ],
+  "concepts": [
+    {
+      "name": "adam-optimizer.md",
+      "path": "vault/concepts/adam-optimizer.md",
+      "en": "Adam Optimizer",
+      "zh": "Adam 最佳化器",
+      "quick": "結合動量與自適應學習率、依一階與二階矩估計更新參數的演算法。"
+    },
+    {
+      "name": "alexnet.md",
+      "path": "vault/concepts/alexnet.md",
+      "en": "AlexNet",
+      "zh": "AlexNet 架構",
+      "quick": "2012 年帶動深度學習浪潮、首度採用 ReLU 與 Dropout 的經典 CNN。"
+    },
+    {
+      "name": "attention.md",
+      "path": "vault/concepts/attention.md",
+      "en": "Attention",
+      "zh": "注意力機制",
+      "quick": "依當下任務對不同輸入資訊分配不同權重，讓模型聚焦較相關內容的機制。"
+    },
+    {
+      "name": "backpropagation.md",
+      "path": "vault/concepts/backpropagation.md",
+      "en": "Backpropagation",
+      "zh": "反向傳播",
+      "quick": "從誤差往回計算各層參數梯度，使模型能有效更新權重的演算法。"
+    },
+    {
+      "name": "batch-normalization.md",
+      "path": "vault/concepts/batch-normalization.md",
+      "en": "Batch Normalization",
+      "zh": "批次正規化",
+      "quick": "在批次維度上將特徵標準化並學習縮放偏移，以加速與穩定訓練的技術。"
+    },
+    {
+      "name": "computer-vision.md",
+      "path": "vault/concepts/computer-vision.md",
+      "en": "Computer Vision",
+      "zh": "電腦視覺",
+      "quick": "讓電腦從數位影像或視訊中獲取高層次理解與特徵的領域。"
+    },
+    {
+      "name": "convolutional-neural-network.md",
+      "path": "vault/concepts/convolutional-neural-network.md",
+      "en": "Convolutional Neural Network",
+      "zh": "卷積神經網路",
+      "quick": "專為格狀資料設計的神經網路，常用卷積層從影像中擷取局部到高階特徵。"
+    },
+    {
+      "name": "gated-recurrent-unit.md",
+      "path": "vault/concepts/gated-recurrent-unit.md",
+      "en": "Gated Recurrent Unit",
+      "zh": "閘控循環單元",
+      "quick": "簡化 LSTM 架構、僅保留更新門與重置門的高效循環神經網路。"
+    },
+    {
+      "name": "image-classification.md",
+      "path": "vault/concepts/image-classification.md",
+      "en": "Image Classification",
+      "zh": "影像分類",
+      "quick": "將輸入影像指派至預先定義的類別標籤的基礎電腦視覺任務。"
+    },
+    {
+      "name": "k-nearest-neighbors.md",
+      "path": "vault/concepts/k-nearest-neighbors.md",
+      "en": "k-Nearest Neighbors",
+      "zh": "k 近鄰演算法",
+      "quick": "依據特徵空間中最近的 k 個鄰近樣本類別進行多數決的分類法。"
+    },
+    {
+      "name": "layer-normalization.md",
+      "path": "vault/concepts/layer-normalization.md",
+      "en": "Layer Normalization",
+      "zh": "層正規化",
+      "quick": "在單一樣本的所有特徵維度上進行標準化，適合序列與小批次的技術。"
+    },
+    {
+      "name": "linear-classifier.md",
+      "path": "vault/concepts/linear-classifier.md",
+      "en": "Linear Classifier",
+      "zh": "線性分類器",
+      "quick": "透過權重矩陣與輸入特徵線性組合計算各類別分數的基礎模型。"
+    },
+    {
+      "name": "long-short-term-memory.md",
+      "path": "vault/concepts/long-short-term-memory.md",
+      "en": "Long Short-Term Memory",
+      "zh": "長短期記憶網路",
+      "quick": "透過細胞狀態與三個閘門控制資訊進出，緩解梯度消失的循環網路。"
+    },
+    {
+      "name": "loss-function.md",
+      "path": "vault/concepts/loss-function.md",
+      "en": "Loss Function",
+      "zh": "損失函數",
+      "quick": "量化模型預測結果與真實標籤差距、供最佳化更新參數的目標函數。"
+    },
+    {
+      "name": "neural-network.md",
+      "path": "vault/concepts/neural-network.md",
+      "en": "Neural Network",
+      "zh": "神經網路",
+      "quick": "由多個可學習層組成的模型，透過調整參數把輸入資料轉成預測結果。"
+    },
+    {
+      "name": "optimization.md",
+      "path": "vault/concepts/optimization.md",
+      "en": "Optimization",
+      "zh": "最佳化",
+      "quick": "透過數值迭代反覆更新模型參數以最小化損失函數的搜尋過程。"
+    },
+    {
+      "name": "permutation-equivariance.md",
+      "path": "vault/concepts/permutation-equivariance.md",
+      "en": "Permutation Equivariance",
+      "zh": "置換等變性",
+      "quick": "當輸入順序發生置換時，模型輸出結果也會產生相同順序置換的特性。"
+    },
+    {
+      "name": "positional-encoding.md",
+      "path": "vault/concepts/positional-encoding.md",
+      "en": "Positional Encoding",
+      "zh": "位置編碼",
+      "quick": "為無序的自注意力機制注入序列前後順序資訊的嵌入向量表示。"
+    },
+    {
+      "name": "recurrent-neural-network.md",
+      "path": "vault/concepts/recurrent-neural-network.md",
+      "en": "Recurrent Neural Network",
+      "zh": "循環神經網路",
+      "quick": "透過隱藏狀態保留先前資訊、逐步處理序列資料的神經網路。"
+    },
+    {
+      "name": "regularization.md",
+      "path": "vault/concepts/regularization.md",
+      "en": "Regularization",
+      "zh": "正規化",
+      "quick": "在損失函數中加入模型複雜度懲罰項以防止過擬合的技巧。"
+    },
+    {
+      "name": "residual-network.md",
+      "path": "vault/concepts/residual-network.md",
+      "en": "Residual Network",
+      "zh": "殘差網路",
+      "quick": "透過跳躍連接學習殘差映射，解決極深層網路退化問題的 CNN 架構。"
+    },
+    {
+      "name": "rotary-position-embedding.md",
+      "path": "vault/concepts/rotary-position-embedding.md",
+      "en": "Rotary Position Embedding",
+      "zh": "旋轉位置編碼",
+      "quick": "透過旋轉二維子空間向量以相對角度編碼位置、長度外推性佳的技術。"
+    },
+    {
+      "name": "saddle-point.md",
+      "path": "vault/concepts/saddle-point.md",
+      "en": "Saddle Point",
+      "zh": "鞍點",
+      "quick": "梯度為零但並非極值，易使高維梯度最佳化停滯的臨界點。"
+    },
+    {
+      "name": "stochastic-gradient-descent.md",
+      "path": "vault/concepts/stochastic-gradient-descent.md",
+      "en": "Stochastic Gradient Descent",
+      "zh": "隨機梯度下降",
+      "quick": "每次迭代使用隨機抽取的小批次資料估算梯度並更新參數的方法。"
+    },
+    {
+      "name": "transformer.md",
+      "path": "vault/concepts/transformer.md",
+      "en": "Transformer",
+      "zh": "轉換器架構",
+      "quick": "以注意力機制為核心、能平行處理序列中各位置關係的模型架構。"
+    }
+  ],
+  "sources": [
+    {
+      "name": "attention-and-transformers-supplement.md",
+      "path": "vault/sources/attention-and-transformers-supplement.md",
+      "en": "Attention and Transformers Supplement",
+      "zh": "注意力機制與 Transformer 補充資料",
+      "kind": "lecture slides"
+    },
+    {
+      "name": "attention-and-transformers.md",
+      "path": "vault/sources/attention-and-transformers.md",
+      "en": "Attention and Transformers",
+      "zh": "注意力機制與 Transformer",
+      "kind": "lecture slides"
+    },
+    {
+      "name": "cnn-architectures-supplement.md",
+      "path": "vault/sources/cnn-architectures-supplement.md",
+      "en": "CNN Architectures Supplement",
+      "zh": "卷積神經網路架構補充資料",
+      "kind": "lecture slides"
+    },
+    {
+      "name": "cnn-architectures.md",
+      "path": "vault/sources/cnn-architectures.md",
+      "en": "CNN Architectures",
+      "zh": "卷積神經網路經典架構",
+      "kind": "lecture slides"
+    },
+    {
+      "name": "image-classification-with-cnns.md",
+      "path": "vault/sources/image-classification-with-cnns.md",
+      "en": "Image Classification with CNNs",
+      "zh": "使用 CNN 的影像分類",
+      "kind": "lecture slides"
+    },
+    {
+      "name": "image-classification-with-linear-classifiers.md",
+      "path": "vault/sources/image-classification-with-linear-classifiers.md",
+      "en": "Image Classification with Linear Classifiers",
+      "zh": "使用線性分類器的影像分類",
+      "kind": "lecture slides"
+    },
+    {
+      "name": "introduction-and-overview-part-1.md",
+      "path": "vault/sources/introduction-and-overview-part-1.md",
+      "en": "Introduction to Computer Vision Part 1",
+      "zh": "電腦視覺導論 Part 1",
+      "kind": "lecture slides"
+    },
+    {
+      "name": "introduction-and-overview-part-2.md",
+      "path": "vault/sources/introduction-and-overview-part-2.md",
+      "en": "Introduction to Deep Learning for Computer Vision Part 2",
+      "zh": "電腦視覺深度學習導論 Part 2",
+      "kind": "lecture slides"
+    },
+    {
+      "name": "neural-networks-and-backpropagation.md",
+      "path": "vault/sources/neural-networks-and-backpropagation.md",
+      "en": "Neural Networks and Backpropagation",
+      "zh": "神經網路與反向傳播",
+      "kind": "lecture slides"
+    },
+    {
+      "name": "recurrent-neural-networks.md",
+      "path": "vault/sources/recurrent-neural-networks.md",
+      "en": "Recurrent Neural Networks",
+      "zh": "循環神經網路",
+      "kind": "lecture slides"
+    },
+    {
+      "name": "regularization-and-optimization-supplement.md",
+      "path": "vault/sources/regularization-and-optimization-supplement.md",
+      "en": "Regularization and Optimization Supplement",
+      "zh": "正規化與最佳化補充資料",
+      "kind": "lecture slides"
+    },
+    {
+      "name": "regularization-and-optimization.md",
+      "path": "vault/sources/regularization-and-optimization.md",
+      "en": "Regularization and Optimization",
+      "zh": "正規化與最佳化",
+      "kind": "lecture slides"
+    },
+    {
+      "name": "rnn-evolution-gru-and-lstm.md",
+      "path": "vault/sources/rnn-evolution-gru-and-lstm.md",
+      "en": "RNN Evolution to GRU and LSTM",
+      "zh": "從經典 RNN 到 GRU 與 LSTM 的演進",
+      "kind": "lecture slides"
+    }
+  ]
+}

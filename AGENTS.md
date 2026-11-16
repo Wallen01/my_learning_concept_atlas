@@ -32,7 +32,7 @@
 3. 檢查標題、作者、年份、版本、章節與核心概念，判定為：`duplicate`、`revision`、`supplement` 或 `new`。
 4. `duplicate` 不建立新的筆記、不搬移檔案；在處理報告記錄比對結果。
 5. `revision`、`supplement`、`new` 建立或更新來源筆記、概念筆記及主題索引；不可覆寫原有來源的追溯資訊。
-6. 只有在所有筆記與來源登錄都成功更新後，才可將檔案從 `raw/` 移至 `source-archive/`。不需手動修改 `website/` 中的任何檔案。
+6. 只有在所有筆記與來源登錄都成功更新後，才可將檔案從 `raw/` 移至 `source-archive/`。執行 `python3 scripts/generate_manifest.py` 產生最新 `website/manifest.json` 靜態索引。不需手動修改 `website/` 中的 HTML 或 CSS。
 7. 執行驗證後，自動將本次整理產生的可提交檔案 `git add`、建立清楚的 commit，並 `git push origin main`。
 8. 推送成功後，由 GitHub Pages 自動部署 `website/`；回報處理摘要、commit ID、推送結果與網站網址。
 
