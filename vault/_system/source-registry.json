@@ -1,9 +1,82 @@
 {
   "sources": [
-    {"title": "Neural Networks and Backpropagation", "file": "lecture_4_Neural Networks and Backpropagation.pdf", "content_hash": "sha256:88c5d90eba02cf5dad9fa40deb6321efcbed52ee92e2d78c71a20150ce39d7e8", "status": "processed"},
-    {"title": "Image Classification with CNNs", "file": "lecture_5_Image Classification with CNNs.pdf", "content_hash": "sha256:e6427207574eef26f4582db2c02d11f5bde238268ba5ce03090b8afcb0a5d55a", "status": "processed"},
-    {"title": "Recurrent Neural Networks", "file": "lecture_7_Recurrent Neural Networks.pdf", "content_hash": "sha256:8f4327ca0a3923197c97e7d0f98cd4c49a151aa8c58bc6de201c2cee9eaab886", "status": "processed"},
-    {"title": "Attention and Transformers", "file": "lecture_8_Attention and Transformers.pdf", "content_hash": "sha256:db92987535cb0f38eddf68004ea99703dc292a82d1eadedc80923a675d37e277", "status": "processed"}
+    {
+      "title": "Neural Networks and Backpropagation",
+      "file": "lecture_4_Neural Networks and Backpropagation.pdf",
+      "content_hash": "sha256:88c5d90eba02cf5dad9fa40deb6321efcbed52ee92e2d78c71a20150ce39d7e8",
+      "status": "processed"
+    },
+    {
+      "title": "Image Classification with CNNs",
+      "file": "lecture_5_Image Classification with CNNs.pdf",
+      "content_hash": "sha256:e6427207574eef26f4582db2c02d11f5bde238268ba5ce03090b8afcb0a5d55a",
+      "status": "processed"
+    },
+    {
+      "title": "Recurrent Neural Networks",
+      "file": "lecture_7_Recurrent Neural Networks.pdf",
+      "content_hash": "sha256:8f4327ca0a3923197c97e7d0f98cd4c49a151aa8c58bc6de201c2cee9eaab886",
+      "status": "processed"
+    },
+    {
+      "title": "Attention and Transformers",
+      "file": "lecture_8_Attention and Transformers.pdf",
+      "content_hash": "sha256:db92987535cb0f38eddf68004ea99703dc292a82d1eadedc80923a675d37e277",
+      "status": "processed"
+    },
+    {
+      "title": "Introduction to Computer Vision Part 1",
+      "file": "lecture_1_part_1_Introduction & Overview.pdf",
+      "content_hash": "sha256:3520e301c59e5ff60fce926377da3c608875373b8fee3fbe5375c49309c0296f",
+      "status": "processed"
+    },
+    {
+      "title": "Introduction to Deep Learning for Computer Vision Part 2",
+      "file": "lecture_1_part_2_Introduction & Overview_r.pdf",
+      "content_hash": "sha256:a1af0eabf5165fa94818a19626e9d1b76aee32f8d1dba9022fa472d86c663d81",
+      "status": "processed"
+    },
+    {
+      "title": "Image Classification with Linear Classifiers",
+      "file": "lecture_2_Image Classification with Linear Classifiers.pdf",
+      "content_hash": "sha256:3465fd23b71a298f9d900af1164fb1cae856da537645f33a0c419b1cb7d70f05",
+      "status": "processed"
+    },
+    {
+      "title": "Regularization and Optimization",
+      "file": "lecture_3_Regularization and Optimization.pdf",
+      "content_hash": "sha256:ece53d54bfd02e2d029d43257a337a22ae140b10ec951d67e16b05f8710ad850",
+      "status": "processed"
+    },
+    {
+      "title": "Regularization and Optimization Supplement",
+      "file": "Lecture 3_Regularization and Optimization 補充資料.pptx",
+      "content_hash": "sha256:e4cb9363d716df5de631b472efbb69c5275b178238f1b786c75df5073db4a69c",
+      "status": "processed"
+    },
+    {
+      "title": "CNN Architectures",
+      "file": "lecture_6_CNN Architectures.pdf",
+      "content_hash": "sha256:05ae6b919876b096391acee6d70c36c0ff36be6654378d34825e15ad19c0f47a",
+      "status": "processed"
+    },
+    {
+      "title": "CNN Architectures Supplement",
+      "file": "Lecture 6 補充資料.pdf",
+      "content_hash": "sha256:4db513ca992143f6a01005536f83b54bbee9977156026fbe63d46793c73b36d0",
+      "status": "processed"
+    },
+    {
+      "title": "RNN Evolution to GRU and LSTM",
+      "file": "Lecture_7_Evolution_ from vanilla RNN to GRU _ LSTMs _v2.pdf",
+      "content_hash": "sha256:ef721d999341e76a49b9455ab8940020f9125c1368e3274b53a5f46bda7e9283",
+      "status": "processed"
+    },
+    {
+      "title": "Attention and Transformers Supplement",
+      "file": "Lecture_8 補充_11092026.pptx",
+      "content_hash": "sha256:e6f5f67e4af2456e986ef4a7ee11cc746e59ba4c5ab71d61d5329222cffaaced",
+      "status": "processed"
+    }
   ]
 }
-

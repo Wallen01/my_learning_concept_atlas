@@ -2,7 +2,7 @@
 type: concept
 aliases: [卷積神經網路, CNN]
 topics: [machine-learning]
-sources: ["[[Image Classification with CNNs（使用 CNN 的影像分類）]]"]
+sources: ["[[Image Classification with CNNs（使用 CNN 的影像分類）]]", "[[CNN Architectures（卷積神經網路經典架構）]]", "[[CNN Architectures Supplement（卷積神經網路架構補充資料）]]"]
 ---
 
 # Convolutional Neural Network（卷積神經網路）
@@ -15,7 +15,11 @@ A Convolutional Neural Network (CNN) applies learnable filters across an input s
 
 ## Related concepts
 - [[Neural Network（神經網路）]]
+- [[AlexNet（AlexNet 架構）]]
+- [[Residual Network（殘差網路）]]
+- [[Batch Normalization（批次正規化）]]
 
 ## Sources
 - [[Image Classification with CNNs（使用 CNN 的影像分類）]]
-
+- [[CNN Architectures（卷積神經網路經典架構）]]
+- [[CNN Architectures Supplement（卷積神經網路架構補充資料）]]

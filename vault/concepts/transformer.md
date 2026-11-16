@@ -2,7 +2,7 @@
 type: concept
 aliases: [轉換器架構]
 topics: [machine-learning]
-sources: ["[[Attention and Transformers（注意力機制與 Transformer）]]"]
+sources: ["[[Attention and Transformers（注意力機制與 Transformer）]]", "[[Attention and Transformers Supplement（注意力機制與 Transformer 補充資料）]]"]
 ---
 
 # Transformer（轉換器架構）
@@ -16,7 +16,11 @@ Transformer architectures use attention layers to model relationships among toke
 ## Related concepts
 - [[Attention（注意力機制）]]
 - [[Recurrent Neural Network（循環神經網路）]]
+- [[Permutation Equivariance（置換等變性）]]
+- [[Positional Encoding（位置編碼）]]
+- [[Rotary Position Embedding（旋轉位置編碼）]]
+- [[Layer Normalization（層正規化）]]
 
 ## Sources
 - [[Attention and Transformers（注意力機制與 Transformer）]]
-
+- [[Attention and Transformers Supplement（注意力機制與 Transformer 補充資料）]]

@@ -2,7 +2,7 @@
 type: concept
 aliases: [神經網路]
 topics: [machine-learning]
-sources: ["[[Neural Networks and Backpropagation（神經網路與反向傳播）]]", "[[Image Classification with CNNs（使用 CNN 的影像分類）]]", "[[Recurrent Neural Networks（循環神經網路）]]"]
+sources: ["[[Neural Networks and Backpropagation（神經網路與反向傳播）]]", "[[Image Classification with CNNs（使用 CNN 的影像分類）]]", "[[Recurrent Neural Networks（循環神經網路）]]", "[[Introduction to Deep Learning for Computer Vision Part 2（電腦視覺深度學習導論 Part 2）]]"]
 ---
 
 # Neural Network（神經網路）
@@ -17,9 +17,12 @@ Neural network 由一系列層組成；每一層對前一層輸出套用可學�
 - [[Backpropagation（反向傳播）]]
 - [[Convolutional Neural Network（卷積神經網路）]]
 - [[Recurrent Neural Network（循環神經網路）]]
+- [[Linear Classifier（線性分類器）]]
+- [[Loss Function（損失函數）]]
+- [[Optimization（最佳化）]]
 
 ## Sources
 - [[Neural Networks and Backpropagation（神經網路與反向傳播）]]
 - [[Image Classification with CNNs（使用 CNN 的影像分類）]]
 - [[Recurrent Neural Networks（循環神經網路）]]
-
+- [[Introduction to Deep Learning for Computer Vision Part 2（電腦視覺深度學習導論 Part 2）]]

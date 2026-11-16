@@ -1,6 +1,7 @@
 .DS_Store
 raw/
 source-archive/
+.obsidian/
 vault/.obsidian/workspace*.json
 website/.cache/
 website/vault
