@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {"title": "Neural Networks and Backpropagation", "file": "lecture_4_Neural Networks and Backpropagation.pdf", "content_hash": "sha256:88c5d90eba02cf5dad9fa40deb6321efcbed52ee92e2d78c71a20150ce39d7e8", "status": "processed"},
+    {"title": "Image Classification with CNNs", "file": "lecture_5_Image Classification with CNNs.pdf", "content_hash": "sha256:e6427207574eef26f4582db2c02d11f5bde238268ba5ce03090b8afcb0a5d55a", "status": "processed"},
+    {"title": "Recurrent Neural Networks", "file": "lecture_7_Recurrent Neural Networks.pdf", "content_hash": "sha256:8f4327ca0a3923197c97e7d0f98cd4c49a151aa8c58bc6de201c2cee9eaab886", "status": "processed"},
+    {"title": "Attention and Transformers", "file": "lecture_8_Attention and Transformers.pdf", "content_hash": "sha256:db92987535cb0f38eddf68004ea99703dc292a82d1eadedc80923a675d37e277", "status": "processed"}
+  ]
+}
+

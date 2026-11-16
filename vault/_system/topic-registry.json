@@ -1,0 +1,11 @@
+{
+  "topics": [
+    {
+      "id": "machine-learning",
+      "name": "Machine Learning",
+      "zh_name": "機器學習",
+      "definition": "讓系統從資料中學習模式並進行預測或決策的相關知識。"
+    }
+  ]
+}
+
