@@ -5,7 +5,7 @@
 ## 使用方式
 
 1. 將新檔案放入 `raw/`。
-2. 對 AI 說「同步 raw」。AI 必須依 [`AGENTS.md`](AGENTS.md) 的流程處理。
+2. 對 AI 說「同步 raw」。AI 必須依 [`AGENTS.md`](AGENTS.md) 的流程處理；驗證成功後會自動 commit、推送至 `main`，並觸發 GitHub Pages 部署。
 3. 本機以 Obsidian 開啟 `vault/`。
 4. 本機預覽網站：`python3 -m http.server 8000 -d website`。
 
